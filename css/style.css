@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+
+:root {
+  --text-color: #00aa00;
+  --background-color: #030303;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto Mono", monospace;
+}
+textarea,
+input {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: none;
+  border-width: 0;
+  outline-color: var(--background-color);
+  border-color: var(--background-color);
+}
+textarea:focus,
+input:focus {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: none;
+  border-width: 0;
+}
