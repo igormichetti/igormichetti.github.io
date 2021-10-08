@@ -4,11 +4,25 @@
   --text-color: #00aa00;
   --background-color: #030303;
 }
+.typing {
+  position: relative;
+  margin-left: 10px;
+}
+.typing::after {
+  content: "";
+  position: absolute;
 
+  width: 100px;
+  height: 50%;
+  border-right: 20px solid white;
+}
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  line-height: 200%;
   font-family: "Roboto Mono", monospace;
+  margin: 10px;
+  box-sizing: border-box;
 }
 textarea,
 input {
@@ -16,6 +30,8 @@ input {
   background-color: var(--background-color);
   border: none;
   border-width: 0;
+  padding: none;
+  padding-block: none;
   outline-color: var(--background-color);
   border-color: var(--background-color);
 }
@@ -25,4 +41,8 @@ input:focus {
   background-color: var(--background-color);
   border: none;
   border-width: 0;
+  outline: none;
+}
+input {
+  display: table-cell;
 }
